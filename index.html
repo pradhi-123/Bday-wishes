@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday! 💖</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Quicksand:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="hearts-container"></div>
+    <audio id="bg-music" src="music.mp3" autoplay loop></audio> <!-- Placeholder soft music from free source -->
+
+    <div class="music-toggle" id="music-btn">
+        <span>🎵 Play Music</span>
+    </div>
+
+    <!-- Page 1: Welcome Page 🎉 -->
+    <section id="page-1" class="page active coquette-bg">
+        <div class="page-content coquette-card">
+            <h1 class="coquette-title">hello, bestie. <span class="sparkle-fade">✨</span></h1>
+            <p class="coquette-subtext">A little something just for you</p>
+            
+            <div class="interactive-gift gentle-float" onclick="openGift()">
+                <div class="luxury-gift-box">
+                    <div class="luxury-ribbon-v"></div>
+                    <div class="luxury-ribbon-h"></div>
+                </div>
+                <div class="luxury-gift-lid">
+                    <div class="luxury-lid-ribbon"></div>
+                </div>
+                <div class="luxury-gift-bow"></div>
+                <p class="coquette-tap-text">open your gift 🗝️</p>
+            </div>
+            
+            <div class="delicate-sparkle s1">✨</div>
+            <div class="delicate-sparkle s2">✨</div>
+        </div>
+    </section>
+
+    <!-- Page 2: Birthday Wish 🎂 -->
+    <section id="page-2" class="page">
+        <div class="page-content">
+            <h1 class="title">Happy Birthday Jency 🎂</h1>
+            <p class="emotional-text fade-in-text">You mean the absolute world to me. I hope today brings you as much
+                joy, peace, and beauty as you bring to everyone else's lives.</p>
+            <button class="next-btn" onclick="nextPage(2)">Next 💕</button>
+        </div>
+    </section>
+
+    <!-- Page 3: Little Cutie 💖 -->
+    <section id="page-3" class="page">
+        <div class="page-content">
+            <h1 class="title">From little cutie to now 💖</h1>
+            <div class="grid-gallery">
+                <img src="images/childhood1.jpg" alt="Childhood Memory 1" class="gallery-img">
+                <img src="images/childhood2.jpg" alt="Childhood Memory 2" class="gallery-img">
+                <img src="images/childhood3.jpg" alt="Childhood Memory 3" class="gallery-img">
+                <img src="images/childhood4.jpg" alt="Childhood Memory 4" class="gallery-img">
+            </div>
+            <button class="next-btn" onclick="nextPage(3)">See more ✨</button>
+        </div>
+    </section>
+
+    <!-- Page 4: Childhood Us 💕 -->
+    <section id="page-4" class="page">
+        <div class="page-content">
+            <h1 class="title">Where it all started 💕</h1>
+            <div class="photo-collage">
+                <div class="polaroid rot-left">
+                    <img src="images/us_childhood1.jpg" alt="Us Childhood 1">
+                    <p>Baby cuties</p>
+                </div>
+                <div class="polaroid rot-right">
+                    <img src="images/us_childhood2.png" alt="Us Childhood 2">
+                    <p>Partners in crime</p>
+                </div>
+            </div>
+            <button class="next-btn mt-2" onclick="nextPage(4)">And then... 🌸</button>
+        </div>
+    </section>
+
+    <!-- Page 5: Doctor Jency 👩‍⚕️ -->
+    <section id="page-5" class="page">
+        <div class="page-content">
+            <h1 class="title">To my brilliant Dr. Jency 🩺✨</h1>
+            <p class="emotional-text mb-1">So incredibly proud of the amazing doctor and woman you've become.</p>
+            <div class="photo-collage">
+                <div class="polaroid rot-left">
+                    <img src="images/doctor1.jpg" alt="Doctor Jency 1">
+                </div>
+                <div class="polaroid rot-right">
+                    <img src="images/doctor2.jpg" alt="Doctor Jency 2">
+                </div>
+            </div>
+            <button class="next-btn mt-2" onclick="nextPage(5)">Tap here 🌸</button>
+        </div>
+    </section>
+
+    <!-- Page 6: Current Us 💕 -->
+    <section id="page-6" class="page">
+        <div class="page-content">
+            <h1 class="title">Look at us now 💕</h1>
+            <div class="grid-gallery">
+                <img src="images/current1.png" alt="Us 1" class="gallery-img">
+                <img src="images/current2.jpg" alt="Us 2" class="gallery-img">
+                <img src="images/current3.jpg" alt="Us 3" class="gallery-img">
+            </div>
+            <button class="next-btn mt-2" onclick="nextPage(6)">Next 😜</button>
+        </div>
+    </section>
+
+    <!-- Page 7: Why You’re Special 🌸 -->
+    <section id="page-7" class="page">
+        <div class="page-content">
+            <h1 class="title">Why You're Special 🌸</h1>
+            <div class="reasons-list">
+                <div class="cute-card bubble-anim">💖 You make everything better</div>
+                <div class="cute-card bubble-anim" style="animation-delay: 0.2s;">💕 My comfort person</div>
+                <div class="cute-card bubble-anim" style="animation-delay: 0.4s;">🌟 My favorite human</div>
+                <div class="cute-card bubble-anim" style="animation-delay: 0.6s;">✨ The brightest soul I know</div>
+            </div>
+            <button class="next-btn mt-2" onclick="nextPage(7)">Next 😜</button>
+        </div>
+    </section>
+
+    <!-- Page 8: Fun Page 😜 -->
+    <section id="page-8" class="page">
+        <div class="page-content">
+            <h1 class="title handwritten">Wait, did you think I forgot about... 😜</h1>
+            <p class="funny-text slide-up">That one embarrassing moment we'll never speak of?? 🤫</p>
+            <p class="funny-text slide-up delay-1">Just kidding... mostly. 😂 LOVE YOUUU!</p>
+            <div class="emoji-rain">🤡 👻 👽 💩</div>
+            <button class="next-btn mt-2" onclick="nextPage(8)">Read my letter 💌</button>
+        </div>
+    </section>
+
+    <!-- Page 9: Heartfelt Letter 💌 -->
+    <section id="page-9" class="page">
+        <div class="page-content letter-bg">
+            <h1 class="title">For you... 💌</h1>
+            <div class="letter-container">
+                <p id="typewriter-text" class="handwritten-letter"></p>
+            </div>
+            <button class="next-btn" id="letter-next-btn" style="opacity: 0; transition: opacity 1s;"
+                onclick="nextPage(9)">The last thing 🎁</button>
+        </div>
+    </section>
+
+    <!-- Page 10: Final Surprise 🎁 -->
+    <section id="page-10" class="page">
+        <div id="confetti-container"></div>
+        <div class="page-content">
+            <h1 class="big-title final-msg pop-in">I love you forever 💖</h1>
+            <button class="next-btn replay-btn pop-in delay-1" onclick="location.reload()">Replay this surprise
+                ✨</button>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
