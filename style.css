@@ -385,14 +385,19 @@ h1.title {
 /* Mobile */
 @media (max-width: 600px) {
     h1.big-title { font-size: 3rem; }
-    h1.title { font-size: 2.2rem; }
-    .page-content { padding: 1.5rem !important; width: 92%; }
+    h1.title { font-size: 2.2rem; margin-bottom: 1.5rem; }
+    .page-content { padding: 1.5rem !important; width: 92%; max-height: 85vh; overflow-y: auto; }
     .emotional-text { font-size: 1.2rem; }
     .coquette-title { font-size: 2.5rem; line-height: 1.2; margin-bottom: 0.5rem; }
     .coquette-subtext { font-size: 0.85rem; letter-spacing: 2px; margin-bottom: 2rem; border-bottom: none; display: block; }
     .coquette-card { padding: 3rem 1.5rem !important; }
     .interactive-gift { transform: scale(0.85); margin-top: 0; }
     .interactive-gift:hover { transform: scale(0.9); }
+    .grid-gallery { gap: 10px; grid-template-columns: repeat(2, 1fr); margin-bottom: 1.5rem; }
+    .photo-collage { gap: 10px; margin-bottom: 1.5rem; }
+    .polaroid { width: 135px; padding: 8px 8px 15px 8px; }
+    .polaroid img { height: 120px; }
+    .polaroid p { font-size: 0.9rem; margin-top: 6px; }
 }
 
 /* Cute Additions */
